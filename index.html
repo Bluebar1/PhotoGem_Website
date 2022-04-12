@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="view photos in your iPhone or iPad photo library along with map, street view, wikipedia pages and properties. Edit GPS photo location and description.">
+    <meta name="keywords" content="iPhone,Photo,Map,Street View,Wikipedia,GPS,Edit Location,Edit Description,Audio,EXIF">
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./owl.carousel.css" />
+    <link rel="stylesheet" href="./owl.theme.default.min.css" />
+    <title>PhotoGem</title>
+
+    <link rel="icon" href="./img/purple_icon.png" sizes="32x32" type="image/png" />
+  </head>
+  <body>
+    <header class="container">
+      <nav data-scroll-header class="navbar">
+        <ul class="group">
+          <li>
+            <a data-scroll href="#Home" data-page="home" href="#">Home</a>
+          </li>
+          <li>
+            <a data-scroll href="#Features" data-page="project" href="#"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a data-scroll href="#About" data-page="contact" href="#"
+              >Contact</a
+            >
+          </li>
+          <div class="bubble"></div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="Home" data-index="0" class="home">
+        <div class="firstpart">
+          <div class="textandbutt">
+            <div class="intro-text">
+              <div class="topwrap">
+                <img src="./img/purple_logo.png" alt="logo" class="logoimg" />
+                <h1>
+                  Explore Your Photos in Context
+                </h1>
+                
+                
+              
+              <div class="cta">
+                <a data-scroll href="#Features" data-page="project" href="#"
+                  ><button class="cta-select">Features & Demos</button></a
+                >
+  
+                <button
+                  onclick="window.location.href='https://apps.apple.com/us/app/photogem-caption-editor/id1238546341'"
+                  class="cta-add"
+                >
+                  <img src="./img/applestore.svg" alt="appstore" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="picscroll">
+            <iframe
+              id="section"
+              src="fragment.html"
+              height="600"
+              width="700"
+              align="right"
+              style="background: transparent; border: none; overflow: hidden"
+              ;
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+      <section id="Features" data-index="1" class="project">
+        <div class="videoandfeatures">
+          <div class="video-container">
+            <div>
+              <p class="demohead">
+                View PhotoGem Demo
+              </p>
+            </div>
+            <div class="row">
+              <video
+                     playsinline
+                     controls
+                     muted
+                     width    = "400"
+                     height   = "500"
+                     id       = "featurevideo"
+                     poster   = "./img/demo_video_snapshot.png"> 
+                 <source src="./img/PhotoGemAppPreview.mp4" type="video/mp4" media="all and (min-width:680px)">
+                 <source src="./img/PhotoGemAppPreview.mp4" type="video/mp4" media="all and (min-width:320px)">   
+              </video>
+              
+            </div>
+          </div>
+          <div class="fullfeatureslist">
+            <h1>Features List</h1>
+            <ul class="fullfeatlist">
+              <li><h3>Map </h3><p>Adjust the height, type (standard or satellite) & zoom level.  Includes the Image Direction Arrow to show direction the camera was pointing. Also includes several location aware links to explore the photo’s location.</p></li>
+              <li><h3>Google Street View Link</h3><p>click to launch into a Google Street View right where the photo was taken (when available).</p></li>
+              <li><h3>Wikipedia Link</h3><p>Configure a Wikipedia page for the photo. Page name is saved with the photo as the photo’s Headline.</p></li>
+              <li><h3>Apple Maps Link</h3><p>Launch into Apple Maps at the photo’s location.</p></li>
+              <li><h3>Search Link</h3><p>Performs a google search for a photo based on location description.</p></li>
+              <li><h3>Caption Viewer/Editor</h3><p>Add your own descriptions to the photo.  PhotoGem saves it along with the image in the photo library.</p></li>
+              <li><h3>Location Editor</h3><p>tap the Map to add or adjust the photo’s gps coordinates.  Useful for adding missing location (like from scanned photos).  You can also adjust the image direction to set the initial Google Street View image. </p></li>
+              <li><h3>Audio Clips</h3><p>Either tap the play button for the photo or configure to “Autoplay” when the image is loaded.  Assign a clip to a photo by either browsing for an audio file or simply tapping the record button.</p></li>
+              <li><h3>Photo Property Viewer</h3><p>Includes basic properties along with EXIF, IPTC, TIFF & GPS.</p></li>
+              <li><h3>Customizable Panels</h3><p>The Map, Description Viewer, Photo Properties and Audio Clips that are viewed can be setup with an easy to use layout tool.  Similar to the the way you configure the Today View Widgets in iOS.
+              </p></li>
+              <li><h3>Other Features</h3><p>Online Help, Dark Mode, iPad Multitasking Support with Split Screen, Slide Over & Drag & Drop.</p></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section  class="slidesection">
+        <div class="owl-carousel owl-theme">
+          <div class="item" style="width:200px"><img src="./img/Slide-AudioClip.png" 
+            alt="Overview over the most important EXIF- and Metadata" class="screenshot_overview" /></div>
+          <div class="item" style="width:200px"><img src="./img/Slide-CustomizeView.png" 
+            alt="Overview over the most important EXIF- and Metadata" class="screenshot_overview" /></div>
+          <div class="item" style="width:200px"><img src="./img/Slide-DarkMode.png" 
+            alt="Overview over the most important EXIF- and Metadata" class="screenshot_overview" /></div>
+          <div class="item" style="width:200px"><img src="./img/Slide-Direction-Dark.png" 
+            alt="Overview over the most important EXIF- and Metadata" class="screenshot_overview" /></div>
+          <div class="item" style="width:200px"><img src="./img/Slide-EditLocation.png" 
+            alt="Overview over the most important EXIF- and Metadata" class="screenshot_overview" /></div>
+          <div class="item" style="width:200px"><img src="./img/Slide-Links.png" 
+            alt="Overview over the most important EXIF- and Metadata" class="screenshot_overview" /></div>
+          <div class="item" style="width:200px"><img src="./img/Slide-ModifyDescription.png" 
+            alt="Overview over the most important EXIF- and Metadata" class="screenshot_overview" /></div>
+          <div class="item" style="width:200px"><img src="./img/Slide-OnLineHelp.png" 
+            alt="Overview over the most important EXIF- and Metadata" class="screenshot_overview" /></div>
+          <div class="item" style="width:200px"><img src="./img/Slide-Photo Metadata.png" 
+            alt="Overview over the most important EXIF- and Metadata" class="screenshot_overview" /></div>
+        </div>
+      </section>
+      
+      <section id="About" data-index="2" class="contact">
+        <div class="helpbg"></div>
+        <div class="allhelpcont">
+          <div class="leftsidehelp">
+            <div class="helpheadwrap">
+              <p class="helphead">Help</p>
+            </div>
+              <div class="helpcl">
+                <iframe
+                align:"center",  
+                src="helpfrag.html"
+                  height="800"
+                  width="600"
+                  scrolling="no"
+                  style="background: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0.7) 0%,
+                    rgba(0, 0, 0, 0.4) 90%,
+                    rgba(0, 0, 0, 0) 100%
+                  ); border-color: black;
+      border-style: solid;
+      border-width: thin;
+      border-bottom-style: none;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      overflow: hidden;"
+                  ;
+                >
+                </iframe>
+              </div>
+          
+          </div>
+          <div class="continfo">
+            <div class="conttop">
+              <h2>Contact Information</h2>
+              <div class="contactex">
+                 
+                  
+                  <a href="mailto:support@diamond4mobile.com" class="contbody">Support & Bugs</a>
+              </div>
+            </div>
+            <div class="linkbot">
+              <h2>Links</h2>
+              <div class="contactexlink">
+                  <button
+                  onclick="window.location.href='https://apps.apple.com/us/app/photogem-caption-editor/id1238546341'"
+                  class="cta-add-link"
+                >
+                  <img src="./img/applestore.svg" alt="appstore" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footerWrap">
+        <a href="http://diamond4mobile.com/PhotoGemPrivacyPolicy.html" class="footerLinks">Privacy Policy</a>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+    ></script>
+    <script 
+      src="./jquery.min.js"
+      type="text/javascript">
+    </script>
+    <script 
+      src="./owl.carousel.js"
+      type="text/javascript">
+    </script>
+    <script src="./slideshow.js"></script>
+    
+    </body>
+</html>

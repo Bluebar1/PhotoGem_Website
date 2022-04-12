@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>wiki-api-test</title>
+
+    <meta name="author" content="SitePoint" />
+
+    <link rel="stylesheet" href="./wikistyle.css" />
+  </head>
+
+  <body>
+    <div class="wikibg">
+      <div class="wikiwrap">
+        <div class="userinputbox">
+          <h1>Enter a Latitude Value</h1>
+          <div class="xinputcontainer">
+            <input class="inputbox" id="xinput" type="text" value="42.66069" />
+          </div>
+          <h1>Enter a Longitude Value</h1>
+          <div class="yinputcontainer">
+            <input
+              class="inputbox"
+              id="yinput"
+              type="text"
+              value="-73.785577"
+            />
+          </div>
+        </div>
+
+        <div class="button-container">
+          <button onclick="fn1()" id="btn1" class="submitbutton">
+            Click for GeoSearch
+          </button>
+        </div>
+        <div class="specwrap">
+          <ul id="dynamic-list">
+            Wikipedia Page Title
+          </ul>
+          <ul id="spec-list">
+            Latitude Coordinate
+          </ul>
+          <ul id="lon-list">
+            Longitude Coordinate
+          </ul>
+          <ul id="dist-list">
+            Distance from Input
+          </ul>
+          <ul id="pageid-list">
+            Wikipedia page ID
+          </ul>
+        </div>
+      </div>
+      <section class="summarysection">
+        <div class="summarywrap">
+          <div class="extractinput">
+            <h1>Enter a Wikipedia Page Title</h1>
+            <div class="xinputcontainer">
+              <input
+                class="inputbox"
+                id="summaryinputbox"
+                type="text"
+                value="Albany Medical Center"
+              />
+            </div>
+          </div>
+          <button onclick="getSummary()" id="btn2" class="submitbutton2">
+            Click For Summary
+          </button>
+        </div>
+        <div class="summarymiddle">
+          <h1>Summary of Page:</h1>
+        </div>
+        <div class="displaysummary">
+          <span id="summaryspan"></span>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./wikiapi.js"></script>
+  </body>
+</html>

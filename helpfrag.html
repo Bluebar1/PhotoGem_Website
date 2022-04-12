@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>3d swipe carousel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <base target="_parent" />
+  </head>
+  <link rel="stylesheet" href="./helpfragstyle.css" />
+  <body>
+    <ul class="collapsible popout">
+      <li>
+        <div class="collapsible-header">
+          <p class="material-icons">What is PhotoGem?</p>
+        </div>
+        <div class="collapsible-body">
+          <span
+            >PhotoGem provides a flexible environment for viewing your photos in
+            context with location, photo properties, and audio. It works with
+            the Photo Albums you set up in the Apple Photos App. As you page
+            through, it presents a configurable collection of “segments” below
+            each photo. The Map segment includes several links that allow you to
+            explore the Photos location with other apps, including integration
+            with Google Street View (via Google Maps) and Wikipedia.
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <p class="material-icons">How do I rearrange the view?</p>
+        </div>
+        <div class="collapsible-body">
+          <span>
+            While viewing a photo, increase or decrease the size of the image
+            portion
+          </span>
+          <span>
+            To rearrange the bottom portion, scroll all the way to the bottom
+            and tap “Edit”. Then you can choose which segments are displayed and
+            in what order.
+          </span>
+          <span>
+            The height of the Map segment can be changed in PhotoGem settings
+            (tap ⚙ in the upper right corner)
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <p class="material-icons">
+            How do I modify a location with the Map segment?
+          </p>
+        </div>
+        <div class="collapsible-body">
+          <span>
+            While viewing a photo image, tap on the Map segment to bring up the
+            “Photo Location” panel. From there you can do one of the following:
+          </span>
+          <span class="bullet">
+            Search for a place by tapping in the search field on the top
+          </span>
+          <span class="bullet">
+            Press on the map at a location where you would like to “drop a pin”.
+            Once the change is saved, it will be the GPS location for the photo.
+          </span>
+          <span class="bullet">
+            Touch a pin if you would like to delete a GPS Coordinate
+          </span>
+          <span class="bullet">
+            Increase or Decrease the Image Direction. The Image Direction is the
+            angle that the camera was pointing when the photo was taken, with 0°
+            being true North, 90° True East, and so on. It is used to give
+            additional context for the photo’s object, as well as the initial
+            frame for Google Street View.
+          </span>
+          <span class="bullet">
+            Change the Map Type - Standard / Hybrid / Satellite . This change is
+            also reflected in the Map Segment after the “Photo Location” panel
+            is closed.
+          </span>
+          <span class="bullet">
+            Zoom in or out using the standard 2 finger gestures. Changes are
+            also reflected in the Map Segment after the “Photo Location” panel
+            is closed.
+          </span>
+          <span class="bullet">
+            Link to another App - The primary purpose of having the links here
+            is so you can quickly “test” what Google Street View will look like
+            after changing the location and image direction, but before
+            committing the change(s).
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <p class="material-icons">
+            How do I modify the Description or Headline of a Photo?
+          </p>
+        </div>
+        <div class="collapsible-body">
+          <span
+            >While viewing a photo image, with the Description segment in the
+            bottom part, tap on the Description segment. Make the changes and
+            tap “Save” to commit.
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <p class="material-icons">How do I use the Audio Clip Segment?</p>
+        </div>
+        <div class="collapsible-body">
+          <span>
+            You can associate Audio Clips with photos. Note that it’s an
+            association and not stored as part the photo.
+          </span>
+          <span>
+            First make sure the “Audio Clip” segment is configured to display
+            (see “How to rearrange the view”)
+          </span>
+          <span>
+            The first time you try to create a clip you are given a choice
+            between saving them on the iPhone or in your iCloud. It’s preferred
+            to store them in iCloud for 2 reasons. First, if they are saved in
+            iCloud and the PhotoGem app is deleted, the audio clips will not be
+            deleted also. Second, if the Audio Clips are saved in the cloud then
+            other devices using PhotoGem with the same iCloud will be able to
+            share the clips. This choice can be changed in PhotoGem Settings (⚙)
+          </span>
+          <span>
+            You can create a clip by simply hitting the red record button or
+            browse for a file by tapping the ellipsis (⋯) that’s on the bottom
+            right of the Audio Clip Segment.
+          </span>
+          <span>
+            PhotoGem Settings also allow you to enable a “AutoPlay” mode where
+            the clip will automatically start playing as soon as the Photo is
+            viewed.
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <p class="material-icons">
+            In the Map Segment, what is the Maps Link used for?
+          </p>
+        </div>
+        <div class="collapsible-body">
+          <span
+            >When you tap the Maps link, PhotoGem will launch the Apple Maps App
+            with the coordinates of the current photo. With Apple Maps you can
+            better explore nearby points of interest (small round buttons for
+            monuments, buildings, hotels, restaurants, etc ).
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <p class="material-icons">What is the Search Link used for?</p>
+        </div>
+        <div class="collapsible-body">
+          <span
+            >When you tap the Search Link, PhotoGem will launch the Safari App
+            with a Google search. The Search is made of info based on the GPS
+            coordinates of the photo. This search can frequently reveal
+            information related to the photo (e.g. description of a castle)
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <p class="material-icons">What is the StreetView link used for?</p>
+        </div>
+        <div class="collapsible-body">
+          <span
+            >When you tap the StreetView Link, PhotoGem will launch Google Maps
+            in Street View mode using the coordinates and image direction of the
+            photo. If the coordinates and direction are correct, and Google has
+            captured Street View images at that location, you will see initially
+            something resembling the photo, with the ability to pan around as if
+            to “return” to where the photo was taken. If the coordinates or
+            direction are not quite right, you can adjust them in the “Photo
+            Location” panel. see “How do I modify a location with the Map
+            segment?”. If Google has not captured Street View images at that
+            location, Google Maps will display “Cannot reach server”. In that
+            case tap cancel and return to PhotoGem.
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <p class="material-icons">How do I make a link to Wikipedia?</p>
+        </div>
+        <div class="collapsible-body">
+          <span
+            >Presently making a link to Wikipedia is a manual process:
+          </span>
+          <span class="bullet">
+            Find the page name for the Wikipedia page you would like to link to.
+            In Wikipedia the page name is showed on the title line near the top
+            of the page in large font size. e.g. Westport House
+          </span>
+          <span class="bullet">
+            Add the page name as the Headline of the photo.
+          </span>
+          <span class="bullet">
+            If there is something in the Photo’s Headline, the Wikipedia link
+            will be active, tapping it will launch Wikipedia with that headline
+            as the page name.
+          </span>
+        </div>
+      </li>
+
+      <li>
+        <div class="collapsible-header">
+          <p class="material-icons">What does the Revert button do?</p>
+        </div>
+        <div class="collapsible-body">
+          <span
+            >The Revert button does the same as in the Apple Photos App. With
+            one exception, it will remove all changes made since the photo was
+            added to the library and restore the photo to its original. However,
+            if the photo was take as PORTRAIT (depth effect), and PhotoGem or
+            any other 3rd party editor changed the photo, then performing Revert
+            will remove the blurred background effect. This issue has been
+            reported to Apple.
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <p class="material-icons">Add or modify keywords?</p>
+        </div>
+        <div class="collapsible-body">
+          <span
+            >PhotoGem currently does not support keyword modification. If you
+            need to modify keywords, it is recommended to use a 3rd party tool
+            such as imagExif .
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <p class="material-icons">How do I enable geotagging on my phone?</p>
+        </div>
+        <div class="collapsible-body">
+          <span
+            >By default geotagging is enabled on iPhones. If it’s not enabled
+            and you would like to have GPS info saved when you take a photo, go
+            into Settings, then Privacy, then Location Services and make sure
+            Camera is set to “While Using the App”
+          </span>
+          <p class="morehelpinfo">
+            More Info:
+            <a href="https://support.apple.com/en-us/HT207092">Apple Support</a>
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <p class="material-icons">
+            How to switch between Dark Mode and Light Mode
+          </p>
+        </div>
+        <div class="collapsible-body">
+          <span
+            >The PhotoGem Dark/Light mode is set by setting the mode for your
+            device. That can be done in Settings, Control Panel or with Siri:
+          </span>
+          <p class="morehelpinfo">
+            More Info:
+            <a href="https://support.apple.com/en-us/HT210332">Apple Support</a>
+          </p>
+        </div>
+      </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="helpjs.js"></script>
+  </body>
+</html>

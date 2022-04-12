@@ -1,0 +1,99 @@
+html {
+  display: flex;
+
+  color: #c0c0c0;
+}
+.userinputbox {
+  margin: auto;
+  width: 60%;
+  border: 1px solid #c0c0c0;
+  padding: 10px;
+}
+.userinputbox h1 {
+  text-align: center;
+}
+#xinput {
+  min-width: 250px;
+  background-color: #c0c0c0;
+}
+#yinput {
+  min-width: 250px;
+  background-color: #c0c0c0;
+}
+.xinputcontainer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.yinputcontainer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.xcoordcontainer {
+  color: black;
+}
+.wikiwrap {
+  padding-top: 60px;
+}
+.specwrap {
+  display: flex;
+  position: absolute;
+  min-width: 1400px;
+  justify-content: space-evenly;
+  min-height: 500px;
+}
+
+.wikibg {
+  min-width: 1400px;
+  min-height: 800px;
+  background-color: #101010;
+  background-size: cover;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 6);
+  position: relative;
+}
+
+.button-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.inputbox {
+  text-align: center;
+}
+.summarysection {
+  position: absolute;
+  display: flex;
+  bottom: 10px;
+  align-content: center;
+  width: 1400px;
+  height: 200px;
+}
+
+.summarywrap {
+  width: 400px;
+  text-align: center;
+}
+
+.displaysummary {
+  width: 700px;
+  padding-right: 30px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.submitbutton2 {
+  margin-top: 20px;
+}
+
+.summarymiddle {
+  padding-top: 30px;
+}
