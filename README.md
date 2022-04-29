@@ -5,10 +5,8 @@ Website for PhotoGem iOS app.
 
 ## Website Overview
 The website was made using HTML/CSS and JavaScript with features such as an animated carrossel screenshot viewer, and an accordion style help menu.
-I also made the "PhotoGem" text logo at the top of the page:   
+I also made the "PhotoGem" text logo at the top of the page.   
   
-![alt text](https://github.com/Bluebar1/PhotoGem_Website/blob/main/img/purple_logo.png)  
-
 This was the first website I ever made and there are many things I would do differently with the knowledge I have gained since making it.
 
 ## App Overview
